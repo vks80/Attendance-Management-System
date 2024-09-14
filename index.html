@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Attendance Management System</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Attendance Management System</h1>
+
+    <!-- Mark Attendance Form -->
+    <form id="attendanceForm">
+      <label for="rollNumber"><b>Roll Number :</b></label>
+      <input type="text" id="rollNumber" placeholder="Enter Roll Number here" required>
+
+      <label for="studentName"><b>Student Name :</b></label>
+      <input type="text" id="studentName" placeholder="Enter Name here" required>
+
+      <label for="date"><b>Date :</b></label>
+      <input type="date" id="date" placeholder="Select Date" required>
+
+      <button type="button" onclick="markAttendance()">Mark Attendance</button>
+    </form>
+
+    <!-- Attendance List -->
+    <div id="attendanceList">
+      <!-- Attendance entries will be displayed here -->
+    </div>
+
+    <!-- Check Attendance Form -->
+    <h2>Check Attendance</h2>
+    <form id="checkForm">
+      <label for="startDate"><b>Start Date :</b></label>
+      <input type="date" id="startDate" required>
+
+      <label for="endDate"><b>End Date :</b></label>
+      <input type="date" id="endDate" required>
+
+      <button type="button" onclick="checkAttendance()">Check Attendance</button>
+    </form>
+
+    <!-- Check Result -->
+    <div id="checkResult">
+      <!-- Attendance entries for the specified date range will be displayed here -->
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
